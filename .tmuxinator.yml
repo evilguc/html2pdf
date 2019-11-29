@@ -1,0 +1,7 @@
+name: <%= `basename $PWD` %>
+root: <%= ENV['PROJECT_DIR'] %>
+
+windows:
+  - code: <%= ENV['EDITOR'] %> README.md
+  - cwd:
+  - git:

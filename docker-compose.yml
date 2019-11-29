@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  server:
+    image: buildkite/puppeteer
+    working_dir: /code
+    user: node
+    volumes:
+      - ./:/code
+    ports:
+      - 3000:3000
+    command: ["node", "index.js"]
